@@ -163,6 +163,7 @@ Real-Time Result Display
 
 # 📂 Repository Structure
 
+```
 HUMAN_ACTIVITY_FINAL/
 
 │
@@ -211,7 +212,7 @@ HUMAN_ACTIVITY_FINAL/
 │   └── Project screenshots
 │
 └── README.md
-
+```
 ---
 
 # ▶️ Running The Application
