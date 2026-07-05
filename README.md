@@ -43,35 +43,6 @@ This project demonstrates a complete AI workflow including **human pose detectio
 
 ---
 
-# 🏗️ Activity Recognition Pipeline
-
-```text
-🎥 Laptop Camera / Video Input
-              │
-              ▼
-🦴 MediaPipe Pose Detection
-              │
-              ▼
-📍 Human Body Landmark Extraction
-              │
-              ▼
-🧹 Feature Processing & Data Preparation
-              │
-              ▼
-🧠 Deep Learning Classification Model
-              │
-              ▼
-📊 Human Activity Prediction
-              │
-              ▼
-🌐 Flask Web Application
-              │
-              ▼
-✅ Activity Displayed to User
-```
-
----
-
 # 🧠 Deep Learning Workflow
 
 ActiVision AI follows a complete machine learning pipeline for recognizing human activities.
@@ -101,28 +72,54 @@ The project experiments with several deep learning architectures.
 
 ---
 
+# 🧪 Model Performance
+
+Multiple deep learning architectures were trained and evaluated on both the **UCI HAR** and **UCF101** benchmark datasets to determine the most suitable model for real-time human activity recognition.
+
+| Model | UCI HAR Training | UCI HAR Test | UCF101 Training | UCF101 Test |
+|--------|-----------------:|-------------:|----------------:|------------:|
+| Single Layer LSTM | 95.76% | 90.46% | 80.03% | 80.39% |
+| Two Layer LSTM | 96.18% | 91.21% | 80.03% | 78.43% |
+| Single Layer RNN | 71.10% | 66.07% | 84.30% | 90.20% |
+| Two Layer RNN | 53.29% | 51.88% | 85.67% | 82.35% |
+| Single Layer GRU | 95.97% | 92.77% | 81.74% | 90.20% |
+| Two Layer GRU | 95.80% | 91.14% | 92.49% | 83.33% |
+| Single Layer CNN | **98.61%** | 90.91% | **98.63%** | **94.12%** |
+| Two Layer CNN | 95.69% | 91.92% | 97.27% | 89.22% |
+| Hybrid CNN-LSTM | 95.51% | 91.41% | 80.89% | 76.47% |
+
+The following benchmark results summarize the deep learning models evaluated during the research phase of this project.
+
+### ✅ Final Model Selection
+
+- **Single Layer GRU** achieved the highest test accuracy (**92.77%**) on the **UCI HAR** dataset, making it well suited for sensor-based activity recognition.
+- **Single Layer CNN** achieved the highest test accuracy (**94.12%**) on the **UCF101** dataset, making it the preferred model for video-based human activity recognition.
+- The **CNN-LSTM** architecture demonstrated promising performance in combining spatial and temporal information but introduced additional computational complexity compared to standalone CNN and GRU models.
+
+---
+
 # ⚙️ Prediction Pipeline
 
 ```text
-Live Camera Frame
+🎥 Live Camera Frame
         │
         ▼
-MediaPipe Pose Detection
+🦴 MediaPipe Pose Detection
         │
         ▼
-Body Landmark Extraction
+📍 Body Landmark Extraction
         │
         ▼
-Feature Vector Generation
+🧹 Feature Vector Generation
         │
         ▼
-Trained Deep Learning Model
+🧠 Trained Deep Learning Model
         │
         ▼
-Human Activity Classification
+🏃 Human Activity Classification
         │
         ▼
-Real-Time Prediction Display
+📺 Real-Time Prediction Display
 ```
 
 ---
@@ -198,36 +195,47 @@ Responsibilities include:
 HUMAN_ACTIVITY_FINAL/
 │
 ├── app.py
-│   └── Main Flask application
+│   └── Flask application entry point that manages routes,
+│       user requests, and real-time activity prediction.
 │
 ├── data_collection.py
-│   └── Pose landmark data collection
+│   └── Captures pose landmarks using MediaPipe and
+│       generates datasets for model training.
 │
 ├── data_training.py
-│   └── Data preprocessing and model training
+│   └── Performs data preprocessing, feature preparation,
+│       model training, and saves the trained model.
 │
 ├── inference.py
-│   └── Real-time activity prediction
+│   └── Loads the trained model and performs
+│       real-time human activity recognition.
 │
 ├── model.h5
-│   └── Trained deep learning model
+│   └── Serialized deep learning model used for inference.
 │
 ├── labels.npy
-│   └── Activity labels
+│   └── Stores activity class labels corresponding
+│       to model predictions.
 │
 ├── requirements.txt
+│   └── Python dependencies required to run the project.
 │
 ├── templates/
 │   ├── home.html
 │   └── login.html
+│       └── HTML templates for the Flask web interface.
 │
 ├── static/
 │   ├── bg.jpg
 │   └── styles/
+│       └── Static assets including CSS, images,
+│           and frontend resources.
 │
 ├── Snapshots/
+│   └── Screenshots showcasing the application.
 │
 └── README.md
+    └── Project documentation.
 ```
 
 ---
@@ -312,19 +320,24 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 # 💡 Skills Demonstrated
 
+### AI & Machine Learning
 - Deep Learning
 - Computer Vision
 - Human Pose Estimation
-- MediaPipe
-- OpenCV
-- TensorFlow & Keras
-- Sequential Deep Learning Models
-- Flask Web Development
 - Feature Engineering
 - Dataset Preparation
+
+### Frameworks & Libraries
+- TensorFlow
+- Keras
+- OpenCV
+- MediaPipe
+- Flask
+
+### Software Development
+- Backend & Frontend Integration
 - Real-Time Video Processing
 - AI Model Deployment
-- Backend & Frontend Integration
 
 ---
 
@@ -343,14 +356,28 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 ---
 
-# 📝 Project Note
+# 🏅 Recognition
 
-> **ActiVision AI** was developed as a final-year academic project to demonstrate the practical implementation of **Deep Learning**, **Computer Vision**, **Human Pose Estimation**, and **Real-Time Human Activity Recognition** using a Flask-based web application.
-
-The project showcases the complete AI development lifecycle—from collecting human movement data and training deep learning models to deploying a real-time activity recognition system powered by a laptop camera.
+- **KSCST State-Level Poster Presentation:** ActiVision AI – Human Activity Recognition was presented at the **Karnataka State Council for Science and Technology (KSCST)** State-Level Poster Presentation event.
+- **Research Contribution:** A research paper based on this project was prepared and submitted, exploring the application of deep learning and computer vision for real-time human activity recognition.
 
 ---
 
-# ⭐ If You Like This Project
+# 👥 Contributors
 
-If you found this project useful, consider giving it a ⭐ on GitHub to support the project.
+This project was developed collaboratively by:
+
+| Contributor | Responsibilities |
+|-------------|-----------------------|
+| **Sai Ravi Chandran** | Designed and developed the frontend, implemented the Flask backend, contributed to feature engineering, integrated the trained deep learning model, implemented real-time inference |
+| **Sirisha V Ramana** | Performed data collection, exploratory data analysis (EDA), data preprocessing, contributed to feature engineering, trained and evaluated multiple deep learning models, optimized model performance, and selected the final activity recognition model. |
+
+---
+
+# 📝 Project Note
+
+> **ActiVision AI** was developed as a **final-year academic project** to demonstrate the practical implementation of **Deep Learning**, **Computer Vision**, **Human Pose Estimation**, and **Real-Time Human Activity Recognition** using a Flask-based web application.
+
+The project showcases the complete AI development lifecycle from collecting human movement data and training deep learning models to deploying a real-time activity recognition system powered by a laptop camera.
+
+---
