@@ -112,7 +112,7 @@ The deep learning models were trained and evaluated using widely recognized huma
 
 # 🧪 Model Performance
 
-Multiple deep learning architectures were trained and evaluated on the UCI HAR and UCF101 benchmark datasets to compare their performance for real-time human activity recognition.
+Multiple deep learning architectures were evaluated on the **UCI HAR** and **UCF101** benchmark datasets to compare their performance for human activity recognition.
 
 | Model | UCI HAR Training | UCI HAR Test | UCF101 Training | UCF101 Test |
 |--------|-----------------:|-------------:|----------------:|------------:|
@@ -120,17 +120,17 @@ Multiple deep learning architectures were trained and evaluated on the UCI HAR a
 | Two Layer LSTM | 96.18% | 91.21% | 80.03% | 78.43% |
 | Single Layer RNN | 71.10% | 66.07% | 84.30% | 90.20% |
 | Two Layer RNN | 53.29% | 51.88% | 85.67% | 82.35% |
-| Single Layer GRU | 95.97% | 92.77% | 81.74% | 90.20% |
+| Single Layer GRU | 95.97% | **92.77%** | 81.74% | 90.20% |
 | Two Layer GRU | 95.80% | 91.14% | 92.49% | 83.33% |
 | Single Layer CNN | **98.61%** | 90.91% | **98.63%** | **94.12%** |
 | Two Layer CNN | 95.69% | 91.92% | 97.27% | 89.22% |
 | Hybrid CNN-LSTM | 95.51% | 91.41% | 80.89% | 76.47% |
 
-### ✅ Final Model Selection
+### Final Model Selection
 
-- **Single Layer GRU** achieved the highest test accuracy (**92.77%**) on the **UCI HAR** dataset, making it well suited for sensor-based activity recognition.
-- **Single Layer CNN** achieved the highest test accuracy (**94.12%**) on the **UCF101** dataset, making it the preferred model for video-based human activity recognition.
-- The **CNN-LSTM** architecture demonstrated promising performance in combining spatial and temporal information but introduced additional computational complexity compared to standalone CNN and GRU models.
+- **Single Layer GRU** achieved the highest test accuracy (**92.77%**) on the **UCI HAR** dataset.
+- **Single Layer CNN** achieved the highest test accuracy (**94.12%**) on the **UCF101** dataset.
+- **CNN-LSTM** demonstrated competitive performance by combining spatial and temporal feature learning, though with higher computational complexity.
 
 ---
 
@@ -170,8 +170,6 @@ Multiple deep learning architectures were trained and evaluated on the UCI HAR a
 - Converts movements into structured numerical data
 - Stores activity samples for model training
 
----
-
 ## 📌 Data Processing & Feature Extraction
 
 - Cleans collected landmark data
@@ -179,27 +177,14 @@ Multiple deep learning architectures were trained and evaluated on the UCI HAR a
 - Converts landmarks into model-ready feature vectors
 - Organizes samples by activity class
 
----
-
 ## 📌 Model Training
 
 - Loads processed datasets
 - Builds deep learning models
 - Trains activity classification networks
 - Evaluates model performance
-- Saves trained model as:
-
-```text
-model.h5
-```
-
-Stores activity labels as:
-
-```text
-labels.npy
-```
-
----
+- Saves trained model as `model.h5`
+- Stores activity labels as `labels.npy`
 
 ## 📌 Inference
 
@@ -208,8 +193,6 @@ labels.npy
 - Extracts body landmarks
 - Performs activity classification
 - Displays prediction in real time
-
----
 
 ## 📌 Flask Web Application
 
@@ -270,15 +253,11 @@ Move into the project directory:
 cd HUMAN_ACTIVITY_FINAL
 ```
 
----
-
 ## 2) Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
-
----
 
 ## 3) Activate the Virtual Environment
 
@@ -294,23 +273,17 @@ After activation:
 (venv) C:\Users\User\HUMAN_ACTIVITY_FINAL>
 ```
 
----
-
 ## 4) Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
 ## 5) Run the Flask Application
 
 ```bash
 python app.py
 ```
-
----
 
 ## 6) Open the Application
 
