@@ -6,13 +6,13 @@ ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that comb
 
 # ✨ Project Highlights
 
-- 🏃 Real-Time Human Activity Recognition
-- 📹 Webcam-Based Activity Detection
-- 🦴 MediaPipe Pose Estimation
-- 🧠 Deep Learning-Based Classification
-- ⚡ Live Prediction Pipeline
-- 🌐 Flask Web Application
-- 📊 Benchmark Evaluation on UCI HAR & UCF101
+- Real-Time Human Activity Recognition
+- Webcam-Based Activity Detection
+- MediaPipe Pose Estimation
+- Deep Learning-Based Classification
+- Live Prediction Pipeline
+- Flask Web Application
+- Benchmark Evaluation on UCI HAR & UCF101
 
 ---
 
@@ -39,15 +39,15 @@ ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that comb
 
 # 📌 Key Features
 
-- 🎥 Real-time human activity recognition using a laptop camera
-- 🦴 Human pose estimation using MediaPipe
-- 📍 Body landmark extraction for movement analysis
-- 🧠 Deep learning-based activity classification
-- ⚡ Live prediction from webcam feed
-- 🌐 Flask-powered interactive web application
-- 📊 Modular pipeline for data collection, training, and inference
-- 💾 Trained model integration for instant predictions
-- 🎯 User-friendly browser interface
+- Real-time human activity recognition using a laptop camera
+- Human pose estimation using MediaPipe
+- Body landmark extraction for movement analysis
+- Deep learning-based activity classification
+- Live prediction from webcam feed
+- Flask-powered interactive web application
+- Modular pipeline for data collection, training, and inference
+- Trained model integration for instant predictions
+- User-friendly browser interface
 
 ---
 
@@ -55,12 +55,12 @@ ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that comb
 
 ActiVision AI is capable of recognizing the following human activities in real time:
 
-- 🚶 Walking
-- 🏃 Running
-- 🧍 Standing
-- 🤸 Jumping
-- 👋 Waving
-- 🏋️ Squatting
+- Walking
+- Running
+- Standing
+- Jumping
+- Waving
+- Squatting
 
 ---
 
@@ -70,12 +70,12 @@ ActiVision AI follows a complete machine learning pipeline for recognizing human
 
 | Stage | Description |
 |--------|-------------|
-| 📹 Data Collection | Captures pose landmarks using MediaPipe |
-| 📍 Feature Extraction | Converts body landmarks into numerical features |
-| 🧹 Data Processing | Cleans and prepares training data |
-| 🧠 Model Training | Trains deep learning activity classification models |
-| 💾 Model Integration | Loads trained model for inference |
-| ⚡ Inference | Predicts activities from live camera input |
+| Data Collection | Captures pose landmarks using MediaPipe |
+| Feature Extraction | Converts body landmarks into numerical features |
+| Data Processing | Cleans and prepares training data |
+| Model Training | Trains deep learning activity classification models |
+| Model Integration | Loads trained model for inference |
+| Inference | Predicts activities from live camera input |
 
 ---
 
@@ -113,6 +113,7 @@ The deep learning models were trained and evaluated using widely recognized huma
 # 🧪 Model Performance
 
 Multiple deep learning architectures were trained and evaluated on both the **UCI HAR** and **UCF101** benchmark datasets to determine the most suitable model for real-time human activity recognition.
+The following benchmark results summarize the performance of multiple deep learning architectures evaluated during the development of ActiVision AI.
 
 | Model | UCI HAR Training | UCI HAR Test | UCF101 Training | UCF101 Test |
 |--------|-----------------:|-------------:|----------------:|------------:|
@@ -125,8 +126,6 @@ Multiple deep learning architectures were trained and evaluated on both the **UC
 | Single Layer CNN | **98.61%** | 90.91% | **98.63%** | **94.12%** |
 | Two Layer CNN | 95.69% | 91.92% | 97.27% | 89.22% |
 | Hybrid CNN-LSTM | 95.51% | 91.41% | 80.89% | 76.47% |
-
-The following benchmark results summarize the performance of different deep learning architectures evaluated during the research and development of ActiVision AI.
 
 ### ✅ Final Model Selection
 
@@ -219,11 +218,11 @@ The Flask backend connects the trained deep learning model with the frontend.
 
 Responsibilities include:
 
-- Handling routes
-- Managing prediction requests
-- Connecting webcam inference
-- Displaying activity predictions
-- Rendering the user interface
+- Handles application routes
+- Processes prediction requests
+- Connects the inference pipeline
+- Displays real-time activity predictions
+- Renders the web interface
 
 ---
 
@@ -260,7 +259,7 @@ HUMAN_ACTIVITY_FINAL/
 
 # ▶️ Getting Started
 
-## 1️⃣ Clone the Repository
+## 1) Clone the Repository
 
 ```bash
 git clone https://github.com/Sai-2410/HAR.git
@@ -274,7 +273,7 @@ cd HUMAN_ACTIVITY_FINAL
 
 ---
 
-## 2️⃣ Create a Virtual Environment
+## 2) Create a Virtual Environment
 
 ```bash
 python -m venv venv
@@ -282,7 +281,7 @@ python -m venv venv
 
 ---
 
-## 3️⃣ Activate the Virtual Environment
+## 3) Activate the Virtual Environment
 
 ### Windows
 
@@ -298,7 +297,7 @@ After activation:
 
 ---
 
-## 4️⃣ Install Dependencies
+## 4) Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -306,7 +305,7 @@ pip install -r requirements.txt
 
 ---
 
-## 5️⃣ Run the Flask Application
+## 5) Run the Flask Application
 
 ```bash
 python app.py
@@ -314,7 +313,7 @@ python app.py
 
 ---
 
-## 6️⃣ Open the Application
+## 6) Open the Application
 
 Visit:
 
@@ -338,32 +337,32 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 # 🎥 Project Demo
 
-> 🎬 A demonstration video showcasing real-time activity recognition will be added soon.
+>  A demonstration video showcasing real-time activity recognition will be added soon.
 
 ---
 
 # 💡 Skills Demonstrated
 
-### 🤖 AI & Machine Learning
+### AI & Machine Learning
 - Deep Learning
 - Computer Vision
 - Human Pose Estimation
 - Feature Engineering
 - Dataset Preparation
 
-### 📚 Frameworks & Libraries
+### Frameworks & Libraries
 - TensorFlow
 - Keras
 - OpenCV
 - MediaPipe
 - Flask
 
-### 💻 Software Development
+### Software Development
 - Backend & Frontend Integration
 - Real-Time Video Processing
 - AI Model Deployment
 
-### 🛠️ Tools & Deployment
+### Tools & Deployment
 - Git & GitHub
 - Python Virtual Environments
 - Package Management (`pip`)
@@ -376,12 +375,12 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 - Support additional activity classes
 - Improve accuracy with larger datasets
-- Explore Vision Transformers (ViT) & Transformer-based architectures for improved activity recognition
+- Explore Vision Transformers (ViT) and Transformer-based architectures
 - Enhance low-light detection
 - Handle partial body occlusion
+- Optimize for edge devices
 - Deploy on cloud platforms
 - Develop a mobile application
-- Optimize for edge devices
 - Add activity history and analytics
 - Integrate Explainable AI (XAI)
 
@@ -400,7 +399,7 @@ The browser will open the ActiVision AI application and begin real-time activity
 # 🏅 Recognition
 
 - **KSCST State-Level Poster Presentation:** The project was presented at the Karnataka State Council for Science and Technology (KSCST) State-Level Poster Presentation.
-- **Research Publication:** A research paper based on the proposed Human Activity Recognition system was prepared and submitted, highlighting the use of deep learning and computer vision for real-time activity recognition.
+Research Publication: A research paper describing the proposed Human Activity Recognition system was prepared and submitted, highlighting the application of deep learning and computer vision for real-time activity recognition.
 
 ---
 
