@@ -1,6 +1,6 @@
 # 🏃 ActiVision AI > Real-Time Human Activity Recognition Using Deep Learning
 
-ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that combines MediaPipe pose estimation and deep learning to recognize human activities in real time using a laptop webcam. The project demonstrates an end-to-end AI pipeline from pose detection and feature extraction to model training, inference, and deployment through an interactive web application.
+ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that leverages MediaPipe pose estimation and deep learning to recognize human activities in real time using a standard laptop webcam. The project demonstrates an end-to-end AI workflow encompassing pose detection, feature extraction, model training, inference, and deployment through an interactive web application.
 
 ---
 
@@ -37,13 +37,13 @@ ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that comb
 
 ---
 
-# 📌 Key Features
+# 📌 Core Features
 
-- Real-time human activity recognition using a laptop camera
+- Real-time human activity recognition using a laptop webcam
 - Human pose estimation using MediaPipe
 - Body landmark extraction for movement analysis
 - Deep learning-based activity classification
-- Live prediction from webcam feed
+- Live inference from webcam input
 - Flask-powered interactive web application
 - Modular pipeline for data collection, training, and inference
 - Trained model integration for instant predictions
@@ -112,8 +112,7 @@ The deep learning models were trained and evaluated using widely recognized huma
 
 # 🧪 Model Performance
 
-Multiple deep learning architectures were trained and evaluated on both the **UCI HAR** and **UCF101** benchmark datasets to determine the most suitable model for real-time human activity recognition.
-The following benchmark results summarize the performance of multiple deep learning architectures evaluated during the development of ActiVision AI.
+Multiple deep learning architectures were trained and evaluated on the UCI HAR and UCF101 benchmark datasets to compare their performance for real-time human activity recognition.
 
 | Model | UCI HAR Training | UCI HAR Test | UCF101 Training | UCF101 Test |
 |--------|-----------------:|-------------:|----------------:|------------:|
@@ -335,12 +334,6 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 ---
 
-# 🎥 Project Demo
-
->  A demonstration video showcasing real-time activity recognition will be added soon.
-
----
-
 # 💡 Skills Demonstrated
 
 ### AI & Machine Learning
@@ -399,7 +392,7 @@ The browser will open the ActiVision AI application and begin real-time activity
 # 🏅 Recognition
 
 - **KSCST State-Level Poster Presentation:** The project was presented at the Karnataka State Council for Science and Technology (KSCST) State-Level Poster Presentation.
-Research Publication: A research paper describing the proposed Human Activity Recognition system was prepared and submitted, highlighting the application of deep learning and computer vision for real-time activity recognition.
+- **Research Publication:** A research paper describing the proposed Human Activity Recognition system was prepared and submitted, highlighting the application of deep learning and computer vision for real-time activity recognition.
 
 ---
 
@@ -416,8 +409,6 @@ This project was developed collaboratively by:
 
 # 📝 Project Note
 
-> **ActiVision AI** was developed collaboratively as a **final-year engineering project** to demonstrate the practical application of **Deep Learning**, **Computer Vision**, **Human Pose Estimation**, and **Real-Time Human Activity Recognition**.
-
-The project showcases an end-to-end AI pipeline, from pose estimation and model training to real-time activity recognition through a Flask-based web application.
+> **ActiVision AI** is an end-to-end Human Activity Recognition system that integrates MediaPipe pose estimation, deep learning, and Flask to deliver real-time activity classification through an interactive web application.
 
 ---
