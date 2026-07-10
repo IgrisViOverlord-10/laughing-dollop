@@ -51,7 +51,7 @@ ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that leve
 
 ---
 
-# 🏃 Supported Activities
+# ✅ Supported Activities
 
 ActiVision AI currently recognizes the following activities in real time. The underlying pipeline is extensible and can be trained to support additional human activities.
 
@@ -81,7 +81,7 @@ ActiVision AI follows a complete machine learning pipeline for recognizing human
 
 # 🦴 Why MediaPipe?
 
-MediaPipe was selected for pose estimation because it provides fast and lightweight real-time human pose tracking with 33 body landmarks. Its efficiency enables accurate webcam-based activity recognition without requiring specialized hardware, making it well suited for real-time inference on standard laptops.
+MediaPipe Pose provides 33 body landmarks and runs efficiently in real time on CPU without requiring dedicated GPU hardware.
 
 ---
 
@@ -105,8 +105,8 @@ The deep learning models were trained and evaluated using widely recognized huma
 
 | Dataset | Description |
 |----------|-------------|
-| **UCI HAR** | Smartphone sensor-based dataset containing accelerometer and gyroscope readings collected from 30 participants performing 6 daily activities. |
-| **UCF101** | Large-scale real-world video dataset containing 13,000+ videos across 101 human action categories, commonly used for action recognition research. |
+| **UCI HAR** | Smartphone sensor-based dataset containing accelerometer and gyroscope readings collected from 30 participants performing six daily activities. | UCI Machine Learning Repository |
+| **UCF101** | Large-scale real-world video dataset containing over 13,000 videos across 101 human action categories, commonly used for action recognition research. | [Kaggle Dataset](https://www.kaggle.com/datasets/matthewjansen/ucf101-action-recognition) |
 
 ---
 
@@ -149,7 +149,7 @@ Multiple deep learning architectures were evaluated on the **UCI HAR** and **UCF
 🧹 Feature Vector Generation
         │
         ▼
-🧠 Trained CNN Model
+🧠 Trained Deep Learning Model
         │
         ▼
 🏃 Activity Classification
@@ -186,7 +186,7 @@ Multiple deep learning architectures were evaluated on the **UCI HAR** and **UCF
 - Saves trained model as `model.h5`
 - Stores activity labels as `labels.npy`
 
-## Inference
+## 📌 Inference
 
 - Loads the trained model
 - Captures live webcam frames
@@ -352,7 +352,7 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 ---
 
-# ⚠️ Current Limitations
+# 📢 Current Limitations
 
 - Supports single-person activity recognition only
 - Requires clear visibility of the human body
@@ -383,5 +383,12 @@ This project was developed collaboratively by:
 # 📝 Project Note
 
 > **ActiVision AI** is an end-to-end Human Activity Recognition system that integrates MediaPipe pose estimation, deep learning, and Flask to deliver real-time activity classification through an interactive web application.
+
+---
+
+# ⚠️ Disclaimer
+
+This project is intended for educational and research purposes. The real-time activity predictions depend on webcam quality, body visibility, environmental conditions, and the trained model, and should not be considered a
+substitute for professional activity monitoring or safety-critical applications.
 
 ---
