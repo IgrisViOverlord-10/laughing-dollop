@@ -247,7 +247,7 @@ HUMAN_ACTIVITY_FINAL/
 ## 1) Clone the Repository
 
 ```bash
-git clone https://github.com/Sai-2410/HAR.git
+git clone https://github.com/Sai-1024X/ActiVision-AI.git
 ```
 
 Move into the project directory:
